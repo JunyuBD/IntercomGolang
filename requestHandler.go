@@ -16,7 +16,7 @@ func SubmitHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error reading request body", http.StatusInternalServerError)
 		return
 	}
-	fmt.Println("-------------------------------------- this is submit request")
+	fmt.Println("---------------------------------------- this is submit request")
 	// Convert the bytes to string and print it
 	bodyString := string(bodyBytes)
 	fmt.Println("this iis the body this %v", bodyString)
